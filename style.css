@@ -1,3 +1,43 @@
-div{
-    background-color: red;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+/* body{
+    background-color: black;
+}
+.container{
+    background-color: bisque;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.card{
+    border: 2px solid #fff;
+    border-radius: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.rest:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card-body{
+background: repeating-linear-gradient(
+    45deg,
+    #cf9821,
+    #d4bc1d 10px,
+    #166ec1 10px,
+    #ddd30f 20px
+  );
+}
+

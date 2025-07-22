@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="caintainer">sa</div>
-    <div class="caintainer">restart</div>
-    <div class="caintainer">score</div>
-    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex justify-center items-center bg-black min-h-screen text-white"
+  >
+    <!-- heading -->
+    <div
+      id="cardGame"
+      class="bg-yellow-50 w-11/12 h-[90vh] mx-auto flex flex-col justify-between gap-5 p-5 rounded-lg shadow-xl"
+    >
+      <h4 class="text-yellow-800 text-center font-bold text-[2rem]">
+        FLIP CARD MEMORY GAME
+      </h4>
+      <!-- moves -->
+      <div
+        class="flex justify-around items-center lg:text-[1.3rem]  text-yellow-700 text-black"
+      >
+        <div class="flex gap-5">
+          <small>Moves: <span>0</span></small>
+          <small>Timing: <span>00:00</span></small>
+        </div>
+        <button
+          class="rest py-1 px-4 border-double border-4 border-yellow-700 rounded-lg"
+        >
+          Reset
+        </button>
+      </div>
+
+      <!-- cards -->
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
