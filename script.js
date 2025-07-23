@@ -53,7 +53,7 @@ let cardGameDiv = document.getElementById("cardGame");
 let gridCards = document.createElement("div");
 gridCards.setAttribute(
   "class",
-  "grid lg:grid-cols-4 grid-cols-3 gap-5 flex-grow px-10"
+  " grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 gap-3 lg:w-8/12 w-full flex-grow md:px-10 px-1 justify-center items-center"
 );
 
 cardGameDiv.append(gridCards);
@@ -73,7 +73,7 @@ function shuffaleCard() {
 function displayCards() {
   cardList.forEach((value, index, accva) => {
     const card = document.createElement("div");
-    card.setAttribute("class", " card card-body");
+    card.setAttribute("class", " card card-body xl:w-[100px] w-[80px] xl:h-[150px] h-[120px]");
     card.setAttribute("id", index);
     gridCards.append(card);
     card.addEventListener("click", flipCard);

@@ -17,21 +17,21 @@
     <!-- heading -->
     <div
       id="cardGame"
-      class="bg-yellow-50 w-11/12 h-[90vh] mx-auto flex flex-col gap-5 p-5 rounded-lg shadow-xl"
+      class="bg-yellow-50 w-11/12 h-full mx-auto  items-center flex flex-col gap-2 rounded-lg shadow-xl"
     >
-      <h4 class="text-yellow-800 text-center font-bold text-[2rem] font-serif">
+      <h4 class="text-yellow-800 text-center font-bold md:text-[2rem] text-[1.5rem] font-serif">
         FLIP CARD MEMORY GAME
       </h4>
       <!-- moves -->
       <div
-        class="flex justify-around items-center lg:text-[1.3rem] text-yellow-700 font-serif"
+        class="flex justify-around items-center w-full  text-yellow-700 font-serif"
       >
-        <div class="flex gap-5">
+        <div class="flex gap-5 md:text-[1.5rem]">
           <small>Moves: <span id="move">0</span></small>
           <small>Timing: <span id="timer">00:00</span></small>
         </div>
         <button id="reset"
-          class="reset py-1 px-4 border-double border-4 border-yellow-700 rounded-lg" onclick="resetCall()"
+          class="reset py-1 px-4 border-double border-4 border-yellow-700 rounded-lg md:text-[1.3rem]" onclick="resetCall()"
         >
           Reset
         </button>
