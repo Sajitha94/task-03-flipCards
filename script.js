@@ -53,7 +53,7 @@ let cardGameDiv = document.getElementById("cardGame");
 let gridCards = document.createElement("div");
 gridCards.setAttribute(
   "class",
-  " grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 gap-3 lg:w-8/12 w-full flex-grow md:px-10 px-1 justify-center items-center"
+  " grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 gap-3 lg:w-8/12 w-full flex-grow md:px-10 px-1 py-2 justify-center items-center"
 );
 
 cardGameDiv.append(gridCards);
