@@ -16,28 +16,49 @@
     align-items: center;
 } */
 
-.card{
-    border: 2px solid #fff;
-    border-radius: 5px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
+.card {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
-.rest:hover{
+.reset:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-.card-body{
-background: repeating-linear-gradient(
+.card-body {
+  background: repeating-linear-gradient(
     45deg,
     #cf9821,
     #d4bc1d 10px,
     #166ec1 10px,
     #ddd30f 20px
   );
+}
+@keyframes youWon {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-youWon {
+  animation: youWon 2s ease-out forwards;
 }
 
